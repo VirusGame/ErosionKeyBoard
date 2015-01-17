@@ -3,6 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Unity Web Player | Virus</title>
+		<link rel="stylesheet" type="text/css" href="../CSS/style_virusgame.css">
 		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
 		<script type="text/javascript">
 		<!--
@@ -21,9 +22,7 @@
 				
 			};
 			var u = new UnityObject2(config);
-
 			jQuery(function() {
-
 				var $missingScreen = jQuery("#unityPlayer").find(".missing");
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
 				$missingScreen.hide();
@@ -112,11 +111,43 @@
 			height: 600px;
 			width: 960px;
 		}
+
+		div.comment{
+			width: 980px;
+			margin: 0 auto;
+			margin-top: 10px;
+			padding-top: 1px;
+			border: solid #CCCCCC;
+			border-width: 1px 0;
+			text-align: left;
+
+		}
+
+		div.comment h2{
+			font-size: 20px;
+			border-left: solid 10px #87f041;
+			padding-left: 10px;
+			margin-left: 50px;
+		}
+
+		div.comment h3{
+			font-size: 18px;
+			margin-left: 80px;
+			padding-bottom: 0px;
+			border-bottom: solid 2px #CCCCCC;
+			width: 400px;
+		}
+
+		div.comment li{
+			font-size: 16px;
+			margin-left: 100px;
+			margin-bottom: 60px;
+		}
 		-->
 		</style>
 	</head>
 	<body>
-		<p class="header"><span>Unity Web Player | </span>Virus</p>
+		<p class="header"><span>Unity Web Player | </span>Virus <br>↓説明はページ下に記載↓</p>
 		<div class="content">
 			<div id="unityPlayer">
 				<div class="missing">
@@ -130,7 +161,20 @@
 					</a>
 				</div>
 			</div>
-		</div>a
+		</div>
 		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+
+		<div class="comment">
+			<h2>操作法</h2>
+				<h3>ゲームスタート</h3>
+					<p><li>Space Key</li></p>
+				<h3>移動</h3>
+					<p><li>十字キー</li></p>
+				<h3>移動速度アップ</h3>
+					<p><li>Shift Keyを押しながら移動</li></p>
+				<h3>リスタート</h3>
+					<p><li>リザルト画面でShift Key</li></p>
+			<br><br><br><br><br>
+		</div>
 	</body>
 </html>
